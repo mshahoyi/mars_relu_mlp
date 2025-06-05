@@ -446,11 +446,6 @@ plt.ylabel("Neuron index")
 plt.yticks(range(0, 50, 1), fontsize=6)
 plt.show()
 
-# Print first few rows as example
-print("\nExample - First 5 neurons' most similar features:")
-for i in range(5):
-    print(f"Neuron {i}: Features {top_4_indices[i].tolist()}")
-
 # %%
 # Show the most important 4 neurons for feature indices
 
@@ -465,10 +460,6 @@ plt.xlabel("Feature index")
 plt.xticks(range(0, 100, 1), fontsize=4)
 plt.show()
 
-# Print first few rows as example
-print("\nExample - First 5 neurons' most similar features:")
-for i in range(5):
-    print(f"Neuron {i}: Features {top_4_indices[i].tolist()}")
 
 # %%
 # Show the cosine similarities for output weights and unembedding matrix
